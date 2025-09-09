@@ -1,0 +1,7 @@
+Running: xsim.dir/etomux_test_behav/xsimk.exe -simmode gui -wdb etomux_test_behav.wdb -simrunnum 0 -socket 50238
+Design successfully loaded
+Design Loading Memory Usage: 9992 KB (Peak: 9992 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 10568 KB (Peak: 10568 KB)
+Simulation CPU Usage: 77 ms

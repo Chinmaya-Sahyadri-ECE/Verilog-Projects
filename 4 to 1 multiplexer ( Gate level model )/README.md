@@ -37,5 +37,3 @@ combinations (`00`, `01`, `10`, `11`).
 As my simulation runs, the output `y` should match the input selected by
 `s1` and `s0`.\
 The output sequence I expect for `y` is: **0, 1, 0, 1**.
-
-  1

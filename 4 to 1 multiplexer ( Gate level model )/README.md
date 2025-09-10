@@ -22,7 +22,7 @@ It selects one of the four single-bit inputs (`a`, `b`, `c`, `d`) based
 on the value of the 2-bit select signal (`s1`, `s0`) and directs it to
 the output `y`.
 
-## 🔬 Simulation
+## 📈 Simulation
 
 To verify the design, I used a **Vivado Simulator**.
 

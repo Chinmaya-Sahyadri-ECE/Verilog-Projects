@@ -21,48 +21,6 @@ The controller manages vehicle signals (**RED, YELLOW, GREEN**) and a pedestrian
 
 ---
 
-## FSM Description
-
-### State Transition Diagram (Conceptual)
-
-```
-                 +----------------+
-                 |                |
-                 |     RESET      |
-                 |                |
-                 +--------+-------+
-                          |
-                          v
-                       +------+        ped_button=1
-                       | RED  |----------------------+
-                       +--+---+                      |
-                          |                          v
-             timer expiry |                    +-------------+
-                          v                    | PED_GREEN   |
-                      +-------+                | (ped_walk)  |
-                      | GREEN |                +------+------+ 
-                      +---+---+                       |
-                          |                           | timer expiry
-             timer expiry |                           v
-                          v                        +------+
-                       +-------+                   | RED  |
-                       | YELLOW|                   +------+
-                       +---+---+
-                           |
-              timer expiry |
-                           v
-                        +------+
-                        | RED  |
-                        +------+
-```
-
-**Legend:**
-- Solid arrows indicate normal FSM transitions
-- `timer expiry` means the programmed state time has elapsed
-- `ped_button=1` triggers pedestrian crossing from RED state only
-
----
-
 
 ### States
 | State Name   | Description |
@@ -178,7 +136,6 @@ See **`timing_summary.rpt`** for detailed timing results.
 
 ## Author
 **Chinmaya Ganapathi K**  
-Electronics & Communication Engineering  
 RTL Design | FPGA | Verilog HDL
 
 ---
